@@ -292,7 +292,7 @@ img {
   color: var(--first-color);
 }
 
-.home__social-iconn:hover{
+.home__social-icon:hover{
   color: var(--first-color-alt);
 }
 
@@ -584,10 +584,18 @@ img {
   margin-right: var(--mb-0-25);
 }
 
-.qualification__data{
+.qualification__data1{
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  text-align: right;
+}
+
+.qualification__data2{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  text-align: left;
 }
 
 .qualification__title{
@@ -602,7 +610,7 @@ img {
 }
 
 .qualification__calendar{
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
 
@@ -1277,10 +1285,10 @@ img {
   .swiper-button-next{
     right: -3.5rem;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets{
+/*  .swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -4.5rem;
   }
-
+*/
   .contact__form{
     width: 460px;
   }
