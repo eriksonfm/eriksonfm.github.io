@@ -92,7 +92,7 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortifolio = new Swiper('.portfolio__container', {
+let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
     navigation: {
@@ -118,7 +118,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     },
     breakpoints:{
         568:{
-            slidesPerview: 2,
+            slidesPerView: 2,
         }
     }
 });
@@ -147,7 +147,7 @@ window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
-    const nav = docment.getElementById('header')
+    const nav = document.getElementById('header')
     // when the acroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
