@@ -291,9 +291,15 @@ img {
   font-size: 1.25rem;
   color: var(--first-color);
 }
+.home__social-ion-svg{
+  fill: var(--first-color);
+}
 
 .home__social-icon:hover{
   color: var(--first-color-alt);
+}
+.home__social-ion-svg:hover{
+  fill: var(--first-color-alt);
 }
 
 .home__blob{
@@ -542,7 +548,7 @@ img {
   width: 90%;
 }
 .skills__sketch{
-  width: 850%;
+  width: 85%;
 }
 .skills__photoshop{
   width: 85%;
