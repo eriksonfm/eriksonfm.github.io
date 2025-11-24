@@ -190,3 +190,40 @@ window.addEventListener('scroll', scrollUp)
     localStorage.setItem('selected-theme', getcurrentTheme())
     localStorage.setItem('selected-icon', getcurrentIcon())
  })
+
+ /*==================== EMAIL SEND ====================*/ 
+class EmailProtector {
+    static getEmail() {
+        const part1 = atob('ZW1vcmFpcw=='); 
+        const part2 = ['u', 't', 'f', 'p', 'r'].join('');
+        const part3 = String.fromCharCode(101, 100, 117); 
+        const part4 = String.fromCharCode(98, 114); 
+        return `${part1}@${part2}.${part3}.${part4}`;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("sendBtn");
+
+  btn.addEventListener("click", function ()  {
+    const project = document.getElementById("project").value;
+    const message = document.getElementById("message").value;
+    
+    const subject = encodeURIComponent(`Contato sobre: ${project}`);    
+
+    const body = encodeURIComponent(
+        `Projeto: ${project}\n\n${message}`
+    );
+
+    if (!project || !message) {
+        alert("Por favor, preencha todos os campos antes de enviar.");
+    }
+    else if(message.length < 10) {
+        alert("A mensagem deve conter pelo menos 10 caracteres.");
+    }
+    else {
+        const to = EmailProtector.getEmail()
+        window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+        }
+    });    
+});
