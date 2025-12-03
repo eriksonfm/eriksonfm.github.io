@@ -424,6 +424,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
+  padding: 0 var(--mb-1)
 }
 
 
