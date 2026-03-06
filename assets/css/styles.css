@@ -965,6 +965,11 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+.footer__socials {
+    display: flex;    
+    gap: 1rem;
+}
+
 .footer__social:hover{
   color: var(--first-color-lighter)
 }
