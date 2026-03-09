@@ -409,7 +409,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img{
-  width: 200px;
+  width: 100%;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -424,6 +424,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
+  padding: 0 var(--mb-1)
 }
 
 
@@ -964,6 +965,11 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+.footer__socials {
+    display: flex;    
+    gap: 1rem;
+}
+
 .footer__social:hover{
   color: var(--first-color-lighter)
 }
@@ -1183,7 +1189,7 @@ img {
     column-gap: 5rem;
   }
   .about__img{
-    width: 350px;
+    width: 250px;
   }
   .about__description{
     text-align: initial;
