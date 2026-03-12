@@ -970,6 +970,13 @@ img {
     gap: 1rem;
 }
 
+/* Garantir contraste dos ícones dentro do footer (evita que fiquem da mesma cor do fundo) */
+.footer__socials .home__social-icon,
+.footer__socials .home__social-ion-svg{
+  color: #fff;
+  fill: #fff;
+}
+
 .footer__social:hover{
   color: var(--first-color-lighter)
 }
